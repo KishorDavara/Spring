@@ -26,3 +26,8 @@ hs_err_pid*
 
 /.recommenders/
 /RemoteSystemsTempFies/
+/Servers/
+.settings/
+/.settings/*
+/.classpath
+/.project
