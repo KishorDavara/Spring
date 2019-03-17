@@ -1,12 +1,16 @@
 package com.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 //@Component("thatSillyCoach")
 @Component
 public class TennisCoach implements Coach {
 
+	@Autowired
+	@Qualifier("randomFortuneService")
+	//@Qualifier("RESTFortuneService")
 	private FortuneService fortuneServie;
 	
 //	@Autowired
@@ -23,12 +27,13 @@ public class TennisCoach implements Coach {
 //    	System.out.println("TennisCoach: Inside setFortuneServie method");
 //		this.fortuneServie = fortuneServie;
 //	}
-    
+
+    /*
     @Autowired
 	public void doSomeCrazyStuff(FortuneService fortuneServie) {
     	System.out.println("TennisCoach: Inside doSomeCrazyStuff method");
 		this.fortuneServie = fortuneServie;
-	}
+	}*/
 	
 	
 	@Override
