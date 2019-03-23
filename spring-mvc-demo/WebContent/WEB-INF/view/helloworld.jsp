@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Main Menu</title>
+<title>Student Information</title>
 </head>
 <body>
-<h2>Spring MVC Demo</h2>
-<hr>
-<a href="showForm">Hello World Form</a>
+<h3>Hello world of spring</h3>
+Student name: ${param.studentName}
 </body>
 </html>

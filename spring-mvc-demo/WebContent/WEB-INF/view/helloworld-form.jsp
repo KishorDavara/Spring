@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Main Menu</title>
+<title>Basic HTML Form</title>
 </head>
 <body>
-<h2>Spring MVC Demo</h2>
-<hr>
-<a href="showForm">Hello World Form</a>
+<form action="processForm" method="GET">
+  <input type="text" name="studentName" placeholder="What's your name?"/>
+  <input type="submit"/>
+</form>
 </body>
 </html>
