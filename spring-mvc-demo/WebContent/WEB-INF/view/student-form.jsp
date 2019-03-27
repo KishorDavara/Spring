@@ -22,10 +22,17 @@
 			<form:option value="Germany" label="Germany" />
 			<form:option value="India" label="India" /> --%>
 			<%-- <form:options items="${student.countryOptions}"/> --%>
-			<form:options items="${theCountryOptions}"/>
-	</form:select>
+			<form:options items="${theCountryOptions}" />
+		</form:select>
 		<br>
 		<br>
+		<label>Favorite Language:</label>
+		<form:radiobutton path="favoriteLanguage" value="Java" />Java 
+		<form:radiobutton path="favoriteLanguage" value="C#" />C# 
+		<form:radiobutton path="favoriteLanguage" value="Python" />Python 
+		<form:radiobutton path="favoriteLanguage" value="Go" />Go
+	<br>
+	<br>
 		<input type="submit" value="Submit" />
 	</form:form>
 </body>
