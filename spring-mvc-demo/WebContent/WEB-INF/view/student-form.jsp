@@ -32,6 +32,11 @@
 		<form:radiobutton path="favoriteLanguage" value="Python" />Python 
 		<form:radiobutton path="favoriteLanguage" value="Go" />Go --%>
 		<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions }"/>
+		<br>
+		<br>
+		<form:checkbox path="operatingSystems" value="Linux" />Linux 
+		<form:checkbox path="operatingSystems" value="Mac" />Mac 
+		<form:checkbox path="operatingSystems" value="Windows" />Windows
 	<br>
 	<br>
 		<input type="submit" value="Submit" />
